@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:liumeng="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_first"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true">
+        <Button android:id="@+id/five_point_last_step"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="preStep"
+                android:text="上一步"/>
+        <Button android:id="@+id/five_point_next_step"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:onClick="nextStep"
+                android:text="下一步"/>
+        <com.example.liumeng.quanminfu2.view.LitPointLayout
+            android:id="@+id/five_point_litl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toLeftOf="@+id/five_point_next_step"
+            android:layout_toRightOf="@+id/five_point_last_step"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            liumeng:count="5"
+            liumeng:position="2">
+
+        </com.example.liumeng.quanminfu2.view.LitPointLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.liumeng.quanminfu2.activity12.ActivityReceiver">
+    <Button android:id="@+id/receiver_btn_sendbroad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="sendBroad"
+            android:text="发送广播"/>
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="dynamic"
+            android:text="动态注册广播"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="dynamic2"
+        android:text="动态注册广播2"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="dynamic3"
+        android:text="动态注册广播3"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="sendDynamic"
+        android:text="发送动态"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="screen"
+        android:text="监听屏幕开启关闭广播"/>
+</LinearLayout>

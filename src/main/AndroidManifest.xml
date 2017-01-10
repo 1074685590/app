@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.liumeng.quanminfu2">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:name="android.permission.READ_CALENDAR"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity12.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!-- 模拟全民付登录 -->
+        <activity android:name=".activity12.ActivityLogin">
+        </activity>
+        <!-- WebView的使用 -->
+        <activity android:name=".activity12.WebViewActivity">
+        </activity>
+        <!-- 动画的探究 -->
+        <activity android:name=".activity12.AnimationActivity">
+        </activity>
+        <!-- 数据库的探究 -->
+        <activity android:name=".activity12.ActivityDatabases">
+        </activity>
+        <!-- 服务 -->
+        <activity android:name=".activity12.ActivityService">
+
+        </activity>
+
+        <service
+            android:name=".serviceandbroad.MyService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+        <!-- 自定义注解 -->
+        <activity android:name=".activity12.ActivityViewInject">
+        </activity>
+
+        <receiver
+            android:name=".serviceandbroad.MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.liumeng.receiver"/>
+            </intent-filter>
+        </receiver>
+        <!-- 广播 -->
+        <activity android:name=".activity12.ActivityReceiver">
+        </activity>
+        <!-- 自定义开关按钮 -->
+        <activity android:name=".activity12.ActivityCustom">
+        </activity>
+        <!-- 自定义刷新listview -->
+        <activity android:name=".activity12.ActivityRefreshListView">
+        </activity>
+        <!-- 自定义viewPager -->
+        <activity android:name=".activity12.ActivityCustomViewPager">
+        </activity>
+
+        <provider
+            android:name=".serviceandbroad.MyContentProvider"
+            android:authorities="com.liumeng.provider"
+            android:enabled="true"
+            android:exported="true">
+        </provider>
+        <!-- 内容提供者 -->
+        <activity android:name=".activity12.ActivityProvider">
+        </activity>
+        <!-- 加载大图片 -->
+        <activity android:name=".activity12.ActivityBigPicture">
+
+        </activity>
+        <!-- 随手涂鸦 -->
+        <activity android:name=".activity12.ActivityDoodle">
+        </activity>
+        <!-- 撕衣服 -->
+        <activity android:name=".activity12.ActivityHearBeat">
+        </activity>
+        <!-- 音乐播放器 -->
+        <activity android:name=".activity12.ActivityMediaPlayer">
+        </activity>
+        <!-- 系统相机 -->
+        <activity android:name=".activity12.ActivityCramera">
+        </activity>
+        <activity android:name=".activity12.ActivityFragment">
+        </activity>
+        <activity android:name=".activity12.ActivitySurfaceView">
+        </activity>
+        <!-- 图片 -->
+        <activity android:name=".activity12.ActivityImageView">
+        </activity>
+        <!-- 自定义控件之五个小圆点 -->
+        <activity android:name=".activity12.FivePointActivity">
+        </activity>
+        <activity android:name=".activity12.litpoint.FirstActivity">
+        </activity>
+        <activity android:name=".activity12.litpoint.SecondActivity">
+        </activity>
+        <activity android:name=".activity12.litpoint.Third">
+        </activity>
+        <activity android:name=".activity12.litpoint.FourActivity">
+        </activity>
+        <activity android:name=".activity12.litpoint.FiveActivity">
+        </activity>
+        <!-- QuickAdapter的使用 -->
+        <activity android:name=".activity12.QuickAdapterActivity">
+
+        </activity>
+
+        <service
+            android:name=".serviceandbroad.MyIntentService"
+            android:exported="false">
+        </service>
+    </application>
+
+</manifest>

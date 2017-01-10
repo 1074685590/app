@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">QuanminFu2</string>
+    <string name="first"><![CDATA[<div>选择选项，然后从以下选项中进行选择：</div>]]></string>
+    <string name="second"><![CDATA[<ol>]]></string>
+    <string name="three"><![CDATA[<li>编辑内容：用于增加、移动和删除桌面上的快捷工具。</li>]]></string>
+    <string name="hello_world">helloworld</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

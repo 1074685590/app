@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity12.ActivityService">
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="bindService"
+            android:text="绑定服务"/>
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="eat"
+            android:text="吃饭"/>
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="download"
+            android:text="下载"/>
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="savapicture"
+            android:text="保存图片"/>
+</LinearLayout>
