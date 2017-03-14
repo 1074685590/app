@@ -1,11 +1,13 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
         <!-- Customize your theme here. -->
+        <!--更改actionbar背景色-->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/asgreen</item>
+        <!--更改状态栏颜色-->
+        <item name="colorAccent">@color/asgreen</item>
     </style>
 
 </resources>

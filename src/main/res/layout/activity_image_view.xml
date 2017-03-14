@@ -15,8 +15,7 @@
                 android:id="@+id/iv_img_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:scaleType="centerInside"
-                android:src="@drawable/share_backgroup"/>
+                android:scaleType="centerInside"/>
     </ScrollView>
 
 

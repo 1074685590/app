@@ -15,7 +15,7 @@ public class BlankFragment extends Fragment{
 		super.onCreate(savedInstanceState);
 		Bundle bundle = getArguments();
 
-		text = bundle.getString("text");
+//		text = bundle.getString("text");
 	}
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -23,8 +23,8 @@ public class BlankFragment extends Fragment{
 		TextView textView = new TextView(getActivity());
 		textView.setTextSize(90);
 		textView.setTextColor(Color.BLACK);
-//		textView.setText("刘蒙");
-		textView.setText(text);
+		textView.setText("刘蒙");
+//		textView.setText(text);
 
 		return textView;
 	}

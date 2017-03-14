@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="SwitchButton">
-        <!-- Sets a drawable as the content of this ImageView. -->
         <attr name="slidBitmap" format="reference" />
         <attr name="isOpen" format="boolean" />
     </declare-styleable>
+
     <declare-styleable name="LitPointLayout">
-        <!-- Sets a drawable as the content of this ImageView. -->
         <attr name="count" format="integer" />
         <attr name="position" format="integer" />
     </declare-styleable>
+
+    <!-- PagerSlidingTab -->
+    <declare-styleable name="PagerSlidingTab">
+        <attr name="indicatorColor" format="color" />
+        <attr name="underlineColor" format="color" />
+        <attr name="dividerColor" format="color" />
+        <attr name="indicatorHeight" format="dimension" />
+        <attr name="underlineHeight" format="dimension" />
+        <attr name="pst_dividerPadding" format="dimension" />
+        <attr name="tabPaddingLeftRight" format="dimension" />
+        <attr name="scrollOffset" format="dimension" />
+        <attr name="tabBackground" format="reference" />
+        <attr name="shouldExpand" format="boolean" />
+        <attr name="pst_textAllCaps" format="boolean" />
+    </declare-styleable>
+
 </resources>

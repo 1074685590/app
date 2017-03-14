@@ -12,18 +12,20 @@
     <uses-feature android:name="android.hardware.camera.autofocus"/>
     <uses-feature android:name="android.permission.READ_CALENDAR"/>
 
+    <permission
+        android:name="com.example.liumeng.quanminfu2.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature"/>
+
+    <uses-permission android:name="com.example.liumeng.quanminfu2.permission.JPUSH_MESSAGE"/>
+
     <application
+        android:name=".global.LiumengApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".activity12.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
         <!-- 模拟全民付登录 -->
         <activity android:name=".activity12.ActivityLogin">
@@ -39,7 +41,6 @@
         </activity>
         <!-- 服务 -->
         <activity android:name=".activity12.ActivityService">
-
         </activity>
 
         <service
@@ -51,14 +52,6 @@
         <activity android:name=".activity12.ActivityViewInject">
         </activity>
 
-        <receiver
-            android:name=".serviceandbroad.MyReceiver"
-            android:enabled="true"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="com.liumeng.receiver"/>
-            </intent-filter>
-        </receiver>
         <!-- 广播 -->
         <activity android:name=".activity12.ActivityReceiver">
         </activity>
@@ -83,7 +76,6 @@
         </activity>
         <!-- 加载大图片 -->
         <activity android:name=".activity12.ActivityBigPicture">
-
         </activity>
         <!-- 随手涂鸦 -->
         <activity android:name=".activity12.ActivityDoodle">
@@ -119,13 +111,28 @@
         </activity>
         <!-- QuickAdapter的使用 -->
         <activity android:name=".activity12.QuickAdapterActivity">
-
         </activity>
 
         <service
             android:name=".serviceandbroad.MyIntentService"
             android:exported="false">
         </service>
+        <!-- DrawerLayout侧滑菜单 -->
+        <activity android:name=".activity12.DrawerLayoutActivity">
+
+        </activity>
+        <activity android:name=".activity12.LoaderPagerActivity">
+        </activity>
+        <activity android:name=".activity12.activity1703.Activity_a">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity12.activity1703.Activity_b"
+                    android:process=".remote">
+        </activity>
     </application>
 
 </manifest>

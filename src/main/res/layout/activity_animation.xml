@@ -3,12 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".activity12.AnimationActivity">
+    android:layout_height="match_parent">
     <ImageView android:layout_width="wrap_content"
                android:src="@mipmap/ic_launcher"
                android:id="@+id/animation_iv"
@@ -22,4 +17,51 @@
     <View android:layout_width="5dp"
           android:id="@+id/line"
           android:layout_height="200dp"/>
+    <!--android:background="@drawable/selector_item_bg_nomal"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/animation_ll_open"
+        android:layout_below="@+id/animation_btn_start"
+        android:layout_height="48dp"
+        android:paddingLeft="14.5dp"
+        android:paddingRight="14.5dp"
+        android:background="@drawable/selector_item_bg_nomal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/viplevel_details_tv_support_shop_num"
+            android:gravity="center_vertical"
+            android:textColor="@color/gray_3c"
+            android:textSize="@dimen/small_text_size"
+            android:text="展开TextView"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:id="@+id/animation_iv_arrow"
+            android:src="@mipmap/icon_to_right_pressed"/>
+    </LinearLayout>
+    <TextView android:layout_width="match_parent"
+              android:layout_marginTop="10dp"
+              android:id="@+id/animation_tv_desc"
+              android:layout_below="@+id/animation_ll_open"
+              android:text="@string/animation_desc"
+              android:gravity="center_horizontal"
+              android:layout_height="wrap_content"/>
 </RelativeLayout>

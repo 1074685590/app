@@ -2,7 +2,10 @@ package com.example.liumeng.quanminfu2.Utils;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.net.Uri;
+
+import com.example.liumeng.quanminfu2.global.LiumengApp;
 
 import java.io.File;
 
@@ -37,5 +40,15 @@ public class Common {
         //开启intent
         // startActivity(intent_install);
         context.startActivityForResult(intent_install, INSTALLREQUEST);
+    }
+
+    //得到资源管理的类
+    public static Resources getResource(){
+        return LiumengApp.context.getResources();
+    }
+
+    //获取到字符串数组
+    public static String[] getStringArrray(int resId) {
+        return getResource().getStringArray(resId);
     }
 }
