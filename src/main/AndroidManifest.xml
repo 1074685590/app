@@ -119,19 +119,26 @@
         </service>
         <!-- DrawerLayout侧滑菜单 -->
         <activity android:name=".activity12.DrawerLayoutActivity">
-
         </activity>
         <activity android:name=".activity12.LoaderPagerActivity">
         </activity>
-        <activity android:name=".activity12.activity1703.Activity_a">
+        <!--横竖屏切换问题-->
+        <activity android:name=".activity12.activity1703.Activity_a"
+                  android:configChanges="orientation|keyboardHidden|screenSize">
+
+        </activity>
+        <activity
+            android:name=".activity12.activity1703.Activity_b"
+            android:process=".remote">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".activity12.activity1703.Activity_b"
-                    android:process=".remote">
+        <!--在家点点主页-->
+        <activity android:name=".activity12.homediandian.HomeDianDianActivity">
+
         </activity>
     </application>
 

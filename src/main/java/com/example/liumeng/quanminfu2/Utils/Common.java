@@ -44,7 +44,7 @@ public class Common {
 
     //得到资源管理的类
     public static Resources getResource(){
-        return LiumengApp.context.getResources();
+        return LiumengApp.mContext.getResources();
     }
 
     //获取到字符串数组

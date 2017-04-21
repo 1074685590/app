@@ -13,7 +13,7 @@ import com.example.liumeng.quanminfu2.global.LiumengApp;
 public abstract class LoaderPager {
     private Context mContext;
     public LoaderPager(){
-        this.mContext = LiumengApp.context;
+        this.mContext = LiumengApp.mContext;
     }
     //成功
     public abstract View success();

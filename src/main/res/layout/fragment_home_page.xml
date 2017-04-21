@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/convenientBanner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:canLoop="true"/>
+    <View android:layout_width="match_parent"
+          android:layout_height="2dp"
+          android:background="@color/gray_e6"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_vertical"
+                  android:orientation="horizontal">
+        <ImageView android:layout_width="28dp"
+                   android:layout_height="28dp"
+                   android:src="@mipmap/ic_launcher"/>
+        <TextSwitcher android:id="@+id/home_page_ts"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:inAnimation="@anim/slide_in_bottom"
+                      android:outAnimation="@anim/slide_out_top"/>
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="15dp"
+                   android:src="@mipmap/icon_to_right_pressed"/>
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+          android:layout_height="1px"
+          android:background="@color/gray_e6"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/home_page_rv"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="首页"
+        android:textColor="@color/gray_3c"/>
+</LinearLayout>

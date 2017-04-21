@@ -25,6 +25,19 @@ import de.greenrobot.event.EventBus;
  * <p>
  * TODO: Customize class - update intent actions, extra parameters and static
  * helper methods.
+ *
+ * onHandleIntent 方法介绍
+ *This method is invoked on the worker thread with a request to process.
+ 在工作线程调用该方法要求的过程。
+ *  Only one Intent is processed (处理)at a time,
+ * but the processing happens on a worker thread that runs independently from other application logic.
+ * 但处理都发生在一个工作者线程运行独立于其他应用程序逻辑
+ * So, if this code takes a long time,
+ * it will hold up other requests to the same IntentService,
+ * 它会耽误其他请求
+ * but it will not hold up anything else. 但是他不会耽误什么
+ * When all requests have been handled,
+ * the IntentService stops itself, so you should not call stopSelf().
  */
 public class MyIntentService extends IntentService {
 

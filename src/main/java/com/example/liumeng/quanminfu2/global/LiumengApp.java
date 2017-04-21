@@ -11,16 +11,19 @@ import android.os.Handler;
 
 public class LiumengApp extends Application {
     //上下文
-    public static Context context;
+    public static Context mContext;
     //handler
     public static Handler mainHandler;
     @Override
     public void onCreate() {
-        context = this;
-
         mainHandler = new Handler();
         //比如在这里可以初始化imageLoader
 //        LogUtils.d("applicion"+"创建了一次");
+        mContext = getApplicationContext();
+    }
+
+    public static Context getAppContext(){
+        return mContext;
     }
 
 }

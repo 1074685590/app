@@ -8,6 +8,7 @@
     <color name="gray_3c">#3C3C3C</color>
     <color name="gray_e6">#E6E6E6</color>
     <color name="white">#FFFFFF</color>
+    <color name="red">#F00</color>
     <!--点击时的背景色-->
     <color name="background_tab_pressed">@color/golden</color>
     <!--标题颜色-->

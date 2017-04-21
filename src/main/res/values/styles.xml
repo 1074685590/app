@@ -7,7 +7,20 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/asgreen</item>
         <!--更改状态栏颜色-->
-        <item name="colorAccent">@color/asgreen</item>
+        <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="BottomBarItem">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/selector_bottom_bar_item_text_color</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:drawablePadding">-15dp</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:background">@null</item>
+    </style>
 </resources>

@@ -24,7 +24,7 @@ public class CacheManger
             // /sdcard/包名/cache/
             // File.separator跨平台/,window / linux \
             cacheDir = Environment.getExternalStorageDirectory().getPath() + File.separator
-                + LiumengApp.context.getPackageName() + File.separator + "cache";
+                + LiumengApp.mContext.getPackageName() + File.separator + "cache";
             File fileDir = new File(cacheDir);
             if (!fileDir.exists())
             {

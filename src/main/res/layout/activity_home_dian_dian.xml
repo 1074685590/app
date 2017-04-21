@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <!--android:background="@android:color/white"-->
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_bar">
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/bar_bg"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_bottom_home"
+            style="@style/BottomBarItem"
+            android:checked="true"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rb_bottom_market"
+            style="@style/BottomBarItem"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="超市"
+            android:checked="false"/>
+
+        <RadioButton
+            android:id="@+id/rb_bottom_car"
+            style="@style/BottomBarItem"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="购物车" />
+
+        <RadioButton
+            android:id="@+id/rb_bottom_mine"
+            style="@style/BottomBarItem"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="我" />
+
+    </RadioGroup>
+
+</RelativeLayout>
