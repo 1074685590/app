@@ -122,23 +122,27 @@
         </activity>
         <activity android:name=".activity12.LoaderPagerActivity">
         </activity>
-        <!--横竖屏切换问题-->
-        <activity android:name=".activity12.activity1703.Activity_a"
-                  android:configChanges="orientation|keyboardHidden|screenSize">
-
+        <!-- 横竖屏切换问题 -->
+        <activity
+            android:name=".activity12.activity1703.Activity_a"
+            android:configChanges="orientation|keyboardHidden|screenSize">
         </activity>
         <activity
             android:name=".activity12.activity1703.Activity_b"
             android:process=".remote">
+        </activity>
+        <!-- 在家点点主页 -->
+        <activity android:name=".activity12.homediandian.HomeDianDianActivity">
+        </activity>
+        <activity android:name=".activity12.activity1703.SwipeRefreshActivity">
+
+        </activity>
+        <activity android:name=".activity12.activity1703.MeasureActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-        </activity>
-        <!--在家点点主页-->
-        <activity android:name=".activity12.homediandian.HomeDianDianActivity">
-
         </activity>
     </application>
 

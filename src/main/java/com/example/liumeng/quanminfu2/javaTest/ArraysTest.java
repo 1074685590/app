@@ -1,6 +1,6 @@
 package com.example.liumeng.quanminfu2.javaTest;
 
-import com.example.liumeng.quanminfu2.javaTest.bean.Zi;
+import com.example.liumeng.quanminfu2.javaTest.bean.Person;
 
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
@@ -16,8 +16,27 @@ public class ArraysTest {
 //        int maxValue = getMaxValue3(4, 5, 6);
 //        System.out.println(maxValue+"");
         //验证代码块
-        Zi z = new Zi();
+//        Zi z = new Zi();
 
+//        if (!false && !true && !false){
+//            System.out.println("liumeng");
+//        }else {
+//
+//        }
+
+//        ArrayList<String> strings = new ArrayList<>();
+//        System.out.println(strings.get(0));
+//        String substring = "012".substring(1,2);
+//        System.out.println(substring);
+//        Person.name
+        Person.age = 20;
+        Person person = new Person();
+        person.name = "liumeng";
+        Person person1 = new Person();
+
+        System.out.println(person.age+"年纪");
+        System.out.println(person1.age+"年纪");
+        System.out.println("性别"+person.sex);
     }
     private static String getFormatTime(long time){
 
